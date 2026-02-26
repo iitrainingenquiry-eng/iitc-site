@@ -3,209 +3,98 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>IITC | Launching Soon 2026</title>
+<title>IITC | Under Construction</title>
 
-<!-- Favicon -->
-<link rel="icon" type="image/png" sizes="32x32" href="favicon.png">
+<link rel="icon" type="image/png" href="favicon.png">
 
 <style>
-:root {
-    --blue: #253671;
-    --yellow: #ffca29;
-    --grey: #727171;
-    --light-blue-1: #dbedf6;
-    --light-blue-2: #7cb1df;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
 body {
-    background: #f8f9fb;
-    color: #333;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f7fa;
+    color: #253671;
+    text-align: center;
 }
 
-/* ================= TOP RIBBON ================= */
+/* Top Ribbon */
 .top-ribbon {
-    background: var(--blue);
-    color: #fff;
-    padding: 10px 20px;
-    text-align: center;
+    background-color: #253671;
+    color: white;
+    padding: 8px 20px;
     font-size: 14px;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
 }
 
 .top-ribbon a {
-    color: var(--yellow);
+    color: #ffca29;
     text-decoration: none;
-    margin: 0 8px;
-    font-weight: bold;
 }
 
 .top-ribbon a:hover {
     text-decoration: underline;
 }
 
-/* ================= HERO SECTION ================= */
-.hero {
-    margin-top: 45px;
-    height: 100vh;
-    background: url("Under-Construction.png") center center / cover no-repeat;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    position: relative;
-}
-
-.hero::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(255,255,255,0.85);
-}
-
-.hero-content {
-    position: relative;
-    z-index: 2;
-    animation: fadeIn 1.8s ease-in-out;
-    padding: 20px;
-}
-
+/* Logo */
 .logo {
-    width: 500px;
-    max-width: 80%;
-    margin-bottom: 20px;
+    margin-top: 40px;
+    width: 350px;
+    max-width: 90%;
+}
+
+/* Hero Section */
+.hero {
+    padding: 40px 20px;
 }
 
 .launching {
-    font-size: 34px;
-    font-weight: bold;
-    color: var(--blue);
-    margin-bottom: 10px;
+    font-size: 28px;
+    margin-top: 20px;
+    color: #253671;
 }
 
 .subtitle {
-    font-size: 18px;
-    color: var(--grey);
+    margin-top: 10px;
+    color: #727171;
 }
 
-/* ================= ABOUT SECTION ================= */
-.about {
-    padding: 80px 20px;
-    text-align: center;
-    background: #fff;
+/* Under Construction Image */
+.construction-img {
+    width: 100%;
+    max-width: 900px;
+    margin-top: 40px;
 }
 
-.section-divider {
-    height: 4px;
-    width: 80px;
-    background: var(--yellow);
-    margin: 15px auto 30px auto;
-}
-
-.about h2 {
-    color: var(--blue);
-}
-
-.about p {
-    max-width: 750px;
-    margin: 0 auto 40px auto;
-    color: var(--grey);
-    line-height: 1.6;
-}
-
-.services {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-.service-box {
-    background: var(--light-blue-1);
-    padding: 20px 30px;
-    border-radius: 8px;
-    font-weight: bold;
-    color: var(--blue);
-    transition: 0.3s;
-}
-
-.service-box:hover {
-    background: var(--light-blue-2);
-    transform: translateY(-3px);
-}
-
-/* ================= SOCIAL ================= */
+/* Social Links */
 .socials {
     margin-top: 20px;
 }
 
 .socials a {
     margin: 0 10px;
-    color: var(--blue);
-    font-weight: bold;
+    color: #253671;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .socials a:hover {
-    color: var(--yellow);
+    color: #ffca29;
 }
 
-/* ================= WHATSAPP ================= */
-.whatsapp {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #25D366;
-    color: white;
-    padding: 14px 20px;
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: bold;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
-    transition: 0.3s;
+/* About Section */
+.about {
+    margin: 60px auto;
+    max-width: 800px;
+    padding: 0 20px;
 }
 
-.whatsapp:hover {
-    transform: scale(1.05);
+.about h2 {
+    margin-bottom: 20px;
 }
 
-/* ================= FOOTER ================= */
-.footer {
-    background: var(--blue);
-    color: #fff;
-    text-align: center;
+footer {
+    margin-top: 60px;
     padding: 20px;
-    font-size: 14px;
-}
-
-/* ================= ANIMATION ================= */
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(25px); }
-    to { opacity: 1; transform: translateY(0); }
-}
-
-/* ================= MOBILE ================= */
-@media (max-width: 768px) {
-    .services {
-        flex-direction: column;
-    }
-
-    .launching {
-        font-size: 26px;
-    }
-
-    .subtitle {
-        font-size: 16px;
-    }
+    font-size: 13px;
+    color: #727171;
 }
 </style>
 </head>
@@ -214,54 +103,44 @@ body {
 
 <div class="top-ribbon">
     Contact Us |
-    <a href="mailto:info@iitc.com">info@iitc.com</a> |
-    <a href="tel:+60193163766">+60 19 316 3766</a> |
-    Seremban, Malaysia
+    Email: <a href="mailto:info@iitc.com">info@iitc.com</a> |
+    Phone: +60 19 316 3766 |
+    Location: Seremban, Malaysia
 </div>
 
-<section class="hero">
-    <div class="hero-content">
-        <img src="logo.png" alt="IITC Logo" class="logo" style="width: 500px; height: auto;">
-        <div class="launching">Launching Soon 2026</div>
-        <div class="subtitle">Our website is currently under construction.</div>
+<div class="hero">
+    <img src="logo.png" alt="IITC Logo" class="logo">
 
-<div class="socials">
-    <a href="https://www.facebook.com/share/1CMhrfzixS/" target="_blank" rel="noopener noreferrer">Facebook</a> |
-    <a href="https://www.linkedin.com/company/iitraining/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-</div>
+    <div class="launching">Launching Soon 2026</div>
+    <div class="subtitle">Our website is currently under construction.</div>
+
+    <img src="Under-Construction.png" alt="Under Construction" class="construction-img">
+
+    <div class="socials">
+        <a href="https://www.facebook.com/share/1CMhrfzixS/" target="_blank" rel="noopener noreferrer">Facebook</a>
+        |
+        <a href="https://www.linkedin.com/company/iitraining/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
     </div>
-</section>
+</div>
 
-<section class="about">
+<div class="about">
     <h2>About IITC</h2>
-    <div class="section-divider"></div>
     <p>
         IITC is committed to delivering top-notch solutions in intelligence and implementation,
         impacting businesses and communities effectively.
     </p>
 
     <h2>Our Services</h2>
-    <div class="section-divider"></div>
-
-    <div class="services">
-        <div class="service-box">Consulting & Strategy</div>
-        <div class="service-box">Training & Workshops</div>
-        <div class="service-box">Multimedia Solutions</div>
-    </div>
-</section>
-
-<div class="footer">
-    © 2026 IITC | All Rights Reserved
+    <p>
+        Consulting & Strategy<br>
+        Training & Workshops<br>
+        Multimedia Solutions
+    </p>
 </div>
 
-<a href="https://wa.me/60193163766" class="whatsapp" target="_blank">
-    WhatsApp Us
-</a>
+<footer>
+    © 2026 IITC. All Rights Reserved.
+</footer>
 
 </body>
-
 </html>
-
-
-
-
