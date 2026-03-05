@@ -6,12 +6,15 @@
 <title>IITC | Corporate Training Partner</title>
 
 <link rel="icon" type="image/png" href="favicon.png">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
 
 <style>
+
+/* Base */
 body {
     margin: 0;
-    font-family: 'Segoe UI', Arial, sans-serif;
-    background-color: #f4f6fa;
+    font-family: 'Montserrat', Arial, sans-serif;
+    background-color: #ffffff;
     color: #1f2d5a;
     line-height: 1.6;
 }
@@ -19,10 +22,11 @@ body {
 /* Top Ribbon */
 .top-ribbon {
     background-color: #1f2d5a;
-    color: #ffffff;
-    padding: 8px 20px;
+    color: white;
+    padding: 10px 20px;
     font-size: 14px;
     text-align: center;
+    font-weight: 600;
 }
 
 .top-ribbon a {
@@ -36,12 +40,12 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 40px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    padding: 15px 50px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
 nav img {
-    height: 50px;
+    height: 60px; /* Vertical logo */
 }
 
 nav ul {
@@ -56,78 +60,115 @@ nav ul li a {
     text-decoration: none;
     color: #1f2d5a;
     font-weight: 600;
+    transition: color 0.3s;
 }
 
 nav ul li a:hover {
     color: #ffcc33;
 }
 
-/* Hero Section */
+/* HERO */
 header {
-    background: linear-gradient(135deg, #1f2d5a, #2e3f8f);
-    color: white;
-    padding: 120px 20px;
+    background: white;
+    padding: 120px 20px 90px;
     text-align: center;
 }
 
+.hero-logo img {
+    height: 160px;
+    margin-bottom: 30px;
+}
+
 header h1 {
-    font-size: 36px;
-    margin-bottom: 20px;
+    font-size: 34px;
+    font-weight: 800;
+    color: #1f2d5a;
+    max-width: 900px;
+    margin: 0 auto 25px;
 }
 
 header p {
     font-size: 18px;
+    color: #555;
     max-width: 750px;
-    margin: 0 auto 30px;
+    margin: 0 auto 35px;
 }
 
 .cta-btn {
     background-color: #ffcc33;
     color: #1f2d5a;
-    padding: 12px 28px;
-    font-weight: 600;
-    border-radius: 5px;
+    padding: 14px 34px;
+    font-weight: 700;
+    border-radius: 6px;
     text-decoration: none;
+    transition: background 0.3s;
 }
 
-/* Sections */
-section {
-    padding: 80px 20px;
-    max-width: 1100px;
-    margin: auto;
+.cta-btn:hover {
+    background-color: #e6b524;
 }
 
-h2 {
+/* Executive Divider */
+.brand-bar {
+    height: 14px;
+    background-color: #ffcc33;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    position: relative;
+}
+
+.brand-bar-grey {
+    height: 3px;
+    background-color: #727171;
+    width: 100%;
+    position: absolute;
+    bottom: -3px;
+}
+
+/* Blue Authority Sections */
+.blue-section {
+    background-color: #1f2d5a;
+    color: white;
+    padding: 90px 20px;
+}
+
+.blue-section h2 {
     text-align: center;
-    margin-bottom: 40px;
-    font-size: 28px;
+    font-size: 32px;
+    margin-bottom: 50px;
 }
 
 .columns {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
+    max-width: 1100px;
+    margin: auto;
 }
 
 .column {
     flex: 1;
     min-width: 280px;
-    background: white;
+    background: rgba(255,255,255,0.08);
     padding: 30px;
     border-radius: 8px;
-    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
 }
 
 .column h3 {
     margin-top: 0;
 }
 
-/* Highlight Section */
-.highlight {
-    background-color: #1f2d5a;
-    color: white;
+/* White Section */
+.white-section {
+    padding: 90px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.white-section h2 {
     text-align: center;
-    padding: 70px 20px;
+    font-size: 32px;
+    margin-bottom: 40px;
 }
 
 /* Footer */
@@ -146,6 +187,7 @@ footer a {
 
 /* Responsive */
 @media(max-width: 768px) {
+
     nav {
         flex-direction: column;
         gap: 15px;
@@ -157,9 +199,18 @@ footer a {
     }
 
     header h1 {
-        font-size: 28px;
+        font-size: 26px;
+    }
+
+    .hero-logo img {
+        height: 120px;
+    }
+
+    .columns {
+        flex-direction: column;
     }
 }
+
 </style>
 </head>
 
@@ -172,7 +223,7 @@ footer a {
 </div>
 
 <nav>
-    <img src="logo.png" alt="IITC Logo">
+    <img src="logo2.png" alt="IITC Vertical Logo">
     <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#focus">Our Focus</a></li>
@@ -181,14 +232,24 @@ footer a {
 </nav>
 
 <header>
+    <div class="hero-logo">
+        <img src="logo.png" alt="IITC Horizontal Logo">
+    </div>
+
     <h1>Corporate Training Partner for Sustainable Performance and Organisational Capability</h1>
+
     <p>
         IITC partners with organisations to deliver structured training programmes that develop capability, enhance performance, and integrate sustainable business practices.
     </p>
+
     <a href="#contact" class="cta-btn">Get in Touch</a>
 </header>
 
-<section id="focus">
+<div class="brand-bar">
+    <div class="brand-bar-grey"></div>
+</div>
+
+<section id="focus" class="blue-section">
     <h2>Our Focus</h2>
     <div class="columns">
         <div class="column">
@@ -206,30 +267,17 @@ footer a {
     </div>
 </section>
 
-<section class="highlight">
-    <h2>Practical Training. Measurable Results. Sustainable Growth.</h2>
-    <p>
-        IITC works with ambitious, performance-driven organisations to develop practical skills, strengthen teams, and build enduring capability.
-    </p>
-</section>
-
-<section id="about">
+<section id="about" class="white-section">
     <h2>About IITC</h2>
     <p style="text-align:center; max-width:850px; margin:auto;">
-        IITC is a corporate training partner committed to supporting organisations in achieving sustainable growth and long-term capability development. Our programmes combine practical learning with a structured approach to performance and sustainability.
-    </p>
-
-    <br><br>
-
-    <p style="text-align:center; max-width:850px; margin:auto;">
-        With a foundation built on extensive experience across learning & development, organisational management, compliance, security, and workforce capability programmes, IITC brings practical insight and disciplined execution to every engagement. Our experience in navigating local training frameworks, corporate governance requirements, and performance-driven initiatives enables us to deliver structured solutions that create measurable and sustainable impact.
+        IITC is a corporate training partner committed to supporting organisations in achieving sustainable growth and long-term capability development.
     </p>
 </section>
 
-<section id="contact">
+<section id="contact" class="blue-section">
     <h2>Contact Us</h2>
     <p style="text-align:center;">
-        Email: <a href="mailto:info@iitc.com.my">info@iitc.com.my</a><br>
+        Email: info@iitc.com.my<br>
         Phone: +60 19 316 3766
     </p>
 </section>
