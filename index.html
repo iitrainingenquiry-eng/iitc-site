@@ -7,14 +7,14 @@
 
 <link rel="icon" type="image/png" href="favicon.png">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
-
 /* Base */
 body {
     margin: 0;
     font-family: 'Montserrat', Arial, sans-serif;
-    background-color: #ffffff;
+    background-color: #f4f6fa;
     color: #1f2d5a;
     line-height: 1.6;
 }
@@ -30,8 +30,12 @@ body {
 }
 
 .top-ribbon a {
-    color: #ffcc33;
+    color: #ffca29;
     text-decoration: none;
+}
+
+.top-ribbon a:hover {
+    color: #ffd845;
 }
 
 /* Navigation */
@@ -41,7 +45,7 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 15px 50px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
 
 nav img {
@@ -64,39 +68,38 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ffcc33;
+    color: #ffca29;
 }
 
-/* HERO */
+/* Hero Section */
 header {
     background: white;
-    padding: 120px 20px 90px;
+    padding: 100px 20px 60px;
     text-align: center;
 }
 
 .hero-logo img {
     height: 160px;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 
 header h1 {
-    font-size: 34px;
+    font-size: 36px;
     font-weight: 800;
-    color: #1f2d5a;
-    max-width: 900px;
-    margin: 0 auto 25px;
+    color: #253671; /* Brand Blue */
+    margin-bottom: 20px;
 }
 
 header p {
     font-size: 18px;
-    color: #555;
+    color: #727171; /* Brand Grey */
     max-width: 750px;
     margin: 0 auto 35px;
 }
 
 .cta-btn {
-    background-color: #ffcc33;
-    color: #1f2d5a;
+    background-color: #ffca29;
+    color: #253671;
     padding: 14px 34px;
     font-weight: 700;
     border-radius: 6px;
@@ -111,7 +114,7 @@ header p {
 /* Executive Divider */
 .brand-bar {
     height: 14px;
-    background-color: #ffcc33;
+    background-color: #ffca29;
     width: 100%;
     box-shadow: 0 4px 8px rgba(0,0,0,0.15);
     position: relative;
@@ -125,50 +128,44 @@ header p {
     bottom: -3px;
 }
 
-/* Blue Authority Sections */
-.blue-section {
-    background-color: #1f2d5a;
-    color: white;
-    padding: 90px 20px;
+/* Sections */
+section {
+    padding: 80px 20px;
+    max-width: 1100px;
+    margin: auto;
 }
 
-.blue-section h2 {
+h2 {
     text-align: center;
-    font-size: 32px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
+    font-size: 28px;
 }
 
 .columns {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-    max-width: 1100px;
-    margin: auto;
 }
 
 .column {
     flex: 1;
     min-width: 280px;
-    background: rgba(255,255,255,0.08);
+    background: white;
     padding: 30px;
     border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
 }
 
 .column h3 {
     margin-top: 0;
 }
 
-/* White Section */
-.white-section {
-    padding: 90px 20px;
-    max-width: 1100px;
-    margin: auto;
-}
-
-.white-section h2 {
+/* Highlight Section */
+.highlight {
+    background-color: #253671; /* Brand Blue */
+    color: white;
     text-align: center;
-    font-size: 32px;
-    margin-bottom: 40px;
+    padding: 70px 20px;
 }
 
 /* Footer */
@@ -181,13 +178,21 @@ footer {
 }
 
 footer a {
-    color: #ffcc33;
+    color: #ffca29;
     text-decoration: none;
+}
+
+/* LinkedIn icon in top ribbon */
+.top-ribbon .linkedin {
+    margin-left: 15px;
+}
+
+.top-ribbon .linkedin i {
+    margin-right: 5px;
 }
 
 /* Responsive */
 @media(max-width: 768px) {
-
     nav {
         flex-direction: column;
         gap: 15px;
@@ -199,18 +204,9 @@ footer a {
     }
 
     header h1 {
-        font-size: 26px;
-    }
-
-    .hero-logo img {
-        height: 120px;
-    }
-
-    .columns {
-        flex-direction: column;
+        font-size: 28px;
     }
 }
-
 </style>
 </head>
 
@@ -220,6 +216,9 @@ footer a {
     Email: <a href="mailto:info@iitc.com.my">info@iitc.com.my</a> |
     Phone: +60 19 316 3766 |
     Malaysia
+    <a href="https://www.linkedin.com/company/iitraining/" target="_blank" class="linkedin">
+        <i class="fab fa-linkedin"></i> LinkedIn
+    </a>
 </div>
 
 <nav>
@@ -249,7 +248,7 @@ footer a {
     <div class="brand-bar-grey"></div>
 </div>
 
-<section id="focus" class="blue-section">
+<section id="focus">
     <h2>Our Focus</h2>
     <div class="columns">
         <div class="column">
@@ -267,17 +266,30 @@ footer a {
     </div>
 </section>
 
-<section id="about" class="white-section">
+<section class="highlight">
+    <h2>Practical Training. Measurable Results. Sustainable Growth.</h2>
+    <p>
+        IITC works with ambitious, performance-driven organisations to develop practical skills, strengthen teams, and build enduring capability.
+    </p>
+</section>
+
+<section id="about">
     <h2>About IITC</h2>
     <p style="text-align:center; max-width:850px; margin:auto;">
         IITC is a corporate training partner committed to supporting organisations in achieving sustainable growth and long-term capability development.
     </p>
+
+    <br><br>
+
+    <p style="text-align:center; max-width:850px; margin:auto;">
+        With a foundation built on extensive experience across learning & development, organisational management, compliance, security, and workforce capability programmes, IITC brings practical insight and disciplined execution to every engagement. Our experience in navigating local training frameworks, corporate governance requirements, and performance-driven initiatives enables us to deliver structured solutions that create measurable and sustainable impact.
+    </p>
 </section>
 
-<section id="contact" class="blue-section">
+<section id="contact">
     <h2>Contact Us</h2>
     <p style="text-align:center;">
-        Email: info@iitc.com.my<br>
+        Email: <a href="mailto:info@iitc.com.my">info@iitc.com.my</a><br>
         Phone: +60 19 316 3766
     </p>
 </section>
