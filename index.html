@@ -3,98 +3,162 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>IITC | Under Construction</title>
+<title>IITC | Corporate Training Partner</title>
 
 <link rel="icon" type="image/png" href="favicon.png">
 
 <style>
 body {
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f5f7fa;
-    color: #253671;
-    text-align: center;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #f4f6fa;
+    color: #1f2d5a;
+    line-height: 1.6;
 }
 
 /* Top Ribbon */
 .top-ribbon {
-    background-color: #253671;
-    color: white;
+    background-color: #1f2d5a;
+    color: #ffffff;
     padding: 8px 20px;
     font-size: 14px;
+    text-align: center;
 }
 
 .top-ribbon a {
-    color: #ffca29;
+    color: #ffcc33;
     text-decoration: none;
 }
 
-.top-ribbon a:hover {
-    text-decoration: underline;
+/* Navigation */
+nav {
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
 }
 
-/* Logo */
-.logo {
-    margin-top: 40px;
-    width: 350px;
-    max-width: 90%;
+nav img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #1f2d5a;
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    color: #ffcc33;
 }
 
 /* Hero Section */
-.hero {
-    padding: 40px 20px;
+header {
+    background: linear-gradient(135deg, #1f2d5a, #2e3f8f);
+    color: white;
+    padding: 120px 20px;
+    text-align: center;
 }
 
-.launching {
-    font-size: 28px;
-    margin-top: 20px;
-    color: #253671;
-}
-
-.subtitle {
-    margin-top: 10px;
-    color: #727171;
-}
-
-/* Under Construction Image */
-.construction-img {
-    width: 100%;
-    max-width: 900px;
-    margin-top: 40px;
-}
-
-/* Social Links */
-.socials {
-    margin-top: 20px;
-}
-
-.socials a {
-    margin: 0 10px;
-    color: #253671;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.socials a:hover {
-    color: #ffca29;
-}
-
-/* About Section */
-.about {
-    margin: 60px auto;
-    max-width: 800px;
-    padding: 0 20px;
-}
-
-.about h2 {
+header h1 {
+    font-size: 36px;
     margin-bottom: 20px;
 }
 
+header p {
+    font-size: 18px;
+    max-width: 750px;
+    margin: 0 auto 30px;
+}
+
+.cta-btn {
+    background-color: #ffcc33;
+    color: #1f2d5a;
+    padding: 12px 28px;
+    font-weight: 600;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+/* Sections */
+section {
+    padding: 80px 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 28px;
+}
+
+.columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.column {
+    flex: 1;
+    min-width: 280px;
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.column h3 {
+    margin-top: 0;
+}
+
+/* Highlight Section */
+.highlight {
+    background-color: #1f2d5a;
+    color: white;
+    text-align: center;
+    padding: 70px 20px;
+}
+
+/* Footer */
 footer {
-    margin-top: 60px;
-    padding: 20px;
-    font-size: 13px;
-    color: #727171;
+    background: #111a3a;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+footer a {
+    color: #ffcc33;
+    text-decoration: none;
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
 }
 </style>
 </head>
@@ -102,41 +166,73 @@ footer {
 <body>
 
 <div class="top-ribbon">
-    Contact Us |
-    Email: <a href="mailto:info@iitc.com">info@iitc.com</a> |
+    Email: <a href="mailto:info@iitc.com.my">info@iitc.com.my</a> |
     Phone: +60 19 316 3766 |
-    Location: Seremban, Malaysia
+    Malaysia
 </div>
 
-<div class="hero">
-    <img src="logo.png" alt="IITC Logo" class="logo">
+<nav>
+    <img src="logo.png" alt="IITC Logo">
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#focus">Our Focus</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
 
-    <div class="launching">Launching Soon 2026</div>
-    <div class="subtitle">Our website is currently under construction.</div>
+<header>
+    <h1>Corporate Training Partner for Sustainable Performance and Organisational Capability</h1>
+    <p>
+        IITC partners with organisations to deliver structured training programmes that develop capability, enhance performance, and integrate sustainable business practices.
+    </p>
+    <a href="#contact" class="cta-btn">Get in Touch</a>
+</header>
 
-    <img src="Under-Construction.png" alt="Under Construction" class="construction-img">
+<section id="focus">
+    <h2>Our Focus</h2>
+    <div class="columns">
+        <div class="column">
+            <h3>Capability Development Programmes</h3>
+            <p>Structured training designed to strengthen skills, leadership, and team performance.</p>
+        </div>
+        <div class="column">
+            <h3>Performance Enhancement Initiatives</h3>
+            <p>Programmes aimed at improving measurable outcomes for individuals and organisations.</p>
+        </div>
+        <div class="column">
+            <h3>Sustainable Business Practices</h3>
+            <p>Integrating long-term sustainability into organisational processes and culture.</p>
+        </div>
+    </div>
+</section>
 
-<div class="socials">
-    <a href="https://www.facebook.com/share/1CMhrfzixS/" target="_blank" rel="noopener noreferrer">Facebook</a>
-    <span> | </span>
-    <a href="https://www.linkedin.com/company/iitraining/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-</div>
-</div>
+<section class="highlight">
+    <h2>Practical Training. Measurable Results. Sustainable Growth.</h2>
+    <p>
+        IITC works with ambitious, performance-driven organisations to develop practical skills, strengthen teams, and build enduring capability.
+    </p>
+</section>
 
-<div class="about">
+<section id="about">
     <h2>About IITC</h2>
-    <p>
-        IITC is committed to delivering top-notch solutions in intelligence and implementation,
-        impacting businesses and communities effectively.
+    <p style="text-align:center; max-width:850px; margin:auto;">
+        IITC is a corporate training partner committed to supporting organisations in achieving sustainable growth and long-term capability development. Our programmes combine practical learning with a structured approach to performance and sustainability.
     </p>
 
-    <h2>Our Services</h2>
-    <p>
-        Consulting & Strategy<br>
-        Training & Workshops<br>
-        Multimedia Solutions
+    <br><br>
+
+    <p style="text-align:center; max-width:850px; margin:auto;">
+        With a foundation built on extensive experience across learning & development, organisational management, compliance, security, and workforce capability programmes, IITC brings practical insight and disciplined execution to every engagement. Our experience in navigating local training frameworks, corporate governance requirements, and performance-driven initiatives enables us to deliver structured solutions that create measurable and sustainable impact.
     </p>
-</div>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+    <p style="text-align:center;">
+        Email: <a href="mailto:info@iitc.com.my">info@iitc.com.my</a><br>
+        Phone: +60 19 316 3766
+    </p>
+</section>
 
 <footer>
     © 2026 IITC. All Rights Reserved.
@@ -144,4 +240,3 @@ footer {
 
 </body>
 </html>
-
