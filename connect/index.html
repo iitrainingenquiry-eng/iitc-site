@@ -6,18 +6,15 @@
   <title>II Training & Consultancy Capability Sheet</title>
   <link rel="icon" type="image/png" href="../favicon.png" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-
   <style>
     :root {
       --blue: #253671;
       --yellow: #ffca29;
       --grey: #727171;
-      --soft-bg: #f6f7fb;
       --whatsapp: #25D366;
     }
 
     * { box-sizing: border-box; }
-
     body {
       margin: 0;
       font-family: 'Montserrat', Arial, sans-serif;
@@ -27,7 +24,6 @@
     }
 
     .page-wrap { padding: 42px 20px; }
-
     .container {
       max-width: 980px;
       margin: 0 auto;
@@ -49,11 +45,7 @@
       pointer-events: none;
       z-index: 0;
     }
-
-    .watermark img {
-      width: min(70vw, 700px);
-      max-width: 70%;
-    }
+    .watermark img { width: auto; height: 65%; max-height: 70%; }
 
     .top-accent {
       height: 6px;
@@ -69,54 +61,40 @@
       position: relative;
       z-index: 1;
     }
-
     header img { width: auto; max-width: 200px; max-height: 80px; margin-bottom: 18px; }
-
-    h1 {
-      margin: 0;
-      font-size: clamp(1.8rem, 3vw, 2.35rem);
-      font-weight: 800;
-      color: var(--blue);
-    }
-
+    h1 { margin: 0; font-size: clamp(1.8rem, 3vw, 2.35rem); font-weight: 800; color: var(--blue); }
     .tagline { margin-top: 10px; font-size: 0.98rem; font-weight: 500; color: var(--grey); letter-spacing: 0.04em; }
-
-    .header-rule {
-      width: 88px; height: 3px;
-      background: var(--yellow);
-      border-radius: 999px;
-      margin: 18px auto 0;
-    }
+    .header-rule { width: 88px; height: 3px; background: var(--yellow); border-radius: 999px; margin: 18px auto 0; }
 
     main { padding-top: 30px; position: relative; z-index: 1; }
-
-    section { margin-bottom: 36px; position: relative; z-index: 1; }
-    section:last-of-type { margin-bottom: 0; }
-
+    section { margin: 36px 0; position: relative; z-index: 1; }
     h2 {
       margin: 0 0 12px;
       font-size: 1.15rem; font-weight: 700; color: var(--blue);
       position: relative; padding-left: 14px;
     }
-
     h2::before {
       content: "";
       position: absolute; left: 0; top: 0.25em; width: 5px; height: 1.1em;
       background: var(--yellow); border-radius: 999px;
     }
-
-    h3 { margin: 18px 0 6px; font-size: 0.98rem; font-weight: 700; color: var(--blue); }
-
+    h3 { margin: 24px 0 10px; font-size: 0.98rem; font-weight: 700; color: var(--blue); }
     p { margin: 0 0 12px; font-size: 0.96rem; color: var(--grey); }
-
-    ul { margin: 8px 0 14px 1.2rem; padding: 0; }
-    li { margin-bottom: 7px; font-size: 0.95rem; color: var(--grey); }
+    ul { margin: 6px 0 16px 1.2rem; padding: 0; }
+    li { margin-bottom: 10px; font-size: 0.95rem; color: var(--grey); }
     li::marker { color: var(--yellow); }
 
     .section-divider {
       height: 1px;
       background: linear-gradient(90deg, rgba(37,54,113,0.14) 0%, rgba(37,54,113,0.03) 100%);
-      margin: 22px 0 24px;
+      margin: 28px 0;
+    }
+
+    /* Core Solutions 2-column grid */
+    .core-solutions-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 28px;
     }
 
     .contact-card {
@@ -130,10 +108,7 @@
       position: relative; z-index: 1;
     }
 
-    .footer-links {
-      display: flex; justify-content: center; flex-wrap: wrap; gap: 12px; margin-top: 16px;
-    }
-
+    .footer-links { display: flex; justify-content: center; flex-wrap: wrap; gap: 12px; margin-top: 16px; }
     .footer-links a {
       text-decoration: none; font-weight: 600; font-size: 0.92rem;
       padding: 10px 16px; border-radius: 999px;
@@ -141,9 +116,7 @@
       transition: transform 0.18s ease, box-shadow 0.18s ease, opacity 0.18s ease;
       color: var(--blue); background: rgba(37,54,113,0.08);
     }
-
     .footer-links a:hover { transform: translateY(-1px); box-shadow: 0 8px 18px rgba(0,0,0,0.08); }
-
     .linkedin-btn { background: var(--blue); color: #fff; }
     .whatsapp-btn { background: var(--whatsapp); color: #fff; }
 
@@ -153,13 +126,13 @@
       main { padding-top: 24px; }
       .watermark img { max-width: 88%; opacity: 0.12; }
       .footer-links a { width: 100%; justify-content: center; }
+      .core-solutions-grid { grid-template-columns: 1fr; gap: 20px; }
     }
   </style>
 </head>
 <body>
   <div class="page-wrap">
     <div class="container">
-
       <!-- Diagonal watermark inside container -->
       <div class="watermark">
         <img src="../logo-plain.png" alt="IITC watermark logo">
@@ -175,57 +148,73 @@
       </header>
 
       <main>
-        <section class="full-width">
+        <!-- Company Overview -->
+        <section>
           <h2>Company Overview</h2>
           <p>II Training & Consultancy (IITC) is a corporate learning and workforce capability development firm dedicated to helping organisations build high-performing, future-ready teams. As a Registered Training Provider with HRD Corp Malaysia, IITC delivers structured and impact-driven learning programs designed to strengthen leadership capability, enhance workforce productivity, and support sustainable organisational growth.</p>
           <p>Our approach goes beyond training delivery, aligning initiatives with business strategy for measurable operational, environmental, and social impact.</p>
           <div class="section-divider"></div>
         </section>
 
+        <!-- Core Solutions -->
         <section>
           <h2>Core Solutions</h2>
-
-          <h3>Workforce Capability Development</h3>
-          <ul>
-            <li>Leadership & Management Development</li>
-            <li>Soft Skills & Human Capital Development</li>
-            <li>Communication & Professional Effectiveness</li>
-            <li>English Language Proficiency for Corporate Teams</li>
-          </ul>
-
-          <h3>Operational Excellence & Process Improvement</h3>
-          <ul>
-            <li>Lean Six Sigma Training & Certification</li>
-            <li>Quality Improvement & Process Optimisation</li>
-            <li>Supply Chain Management</li>
-            <li>Maintenance & Operational Excellence</li>
-          </ul>
-
-          <h3>Digital & Future Skills Development</h3>
-          <ul>
-            <li>Generative AI for Business Applications</li>
-            <li>IT & Programming Fundamentals</li>
-            <li>Digital Sales & Consultative Selling</li>
-          </ul>
-
-          <h3>Specialised Technical Training</h3>
-          <ul>
-            <li>Cleanroom Design & Operations</li>
-            <li>ESD (Electrostatic Discharge) Engineering Training</li>
-            <li>Technical Engineering Training Programs</li>
-          </ul>
+          <div class="core-solutions-grid">
+            <!-- Workforce Capability -->
+            <div>
+              <h3>Workforce Capability Development</h3>
+              <ul>
+                <li>Leadership & Management Development</li>
+                <li>Soft Skills & Human Capital Development</li>
+                <li>Communication & Professional Effectiveness</li>
+                <li>English Language Proficiency for Corporate Teams</li>
+              </ul>
+            </div>
+            <!-- Operational Excellence -->
+            <div>
+              <h3>Operational Excellence & Process Improvement</h3>
+              <ul>
+                <li>Lean Six Sigma Training & Certification</li>
+                <li>Quality Improvement & Process Optimisation</li>
+                <li>Supply Chain Management</li>
+                <li>Maintenance & Operational Excellence</li>
+              </ul>
+            </div>
+            <!-- Digital & Future Skills -->
+            <div>
+              <h3>Digital & Future Skills Development</h3>
+              <ul>
+                <li>Generative AI for Business Applications</li>
+                <li>IT & Programming Fundamentals</li>
+                <li>Digital Sales & Consultative Selling</li>
+              </ul>
+            </div>
+            <!-- Specialised Technical -->
+            <div>
+              <h3>Specialised Technical Training</h3>
+              <ul>
+                <li>Cleanroom Design & Operations</li>
+                <li>ESD (Electrostatic Discharge) Engineering Training</li>
+                <li>Technical Engineering Training Programs</li>
+              </ul>
+            </div>
+            <!-- Compliance & ESG -->
+            <div>
+              <h3>Compliance, Sustainability & ESG Training</h3>
+              <ul>
+                <li>Occupational Safety & Health (OSH)</li>
+                <li>Environmental Management & Sustainability Practices</li>
+                <li>ESG Awareness & Governance Training</li>
+                <li>Food Safety Management</li>
+                <li>Annual Certification & Compliance Training</li>
+              </ul>
+            </div>
+          </div>
+          <div class="section-divider"></div>
         </section>
 
+        <!-- Why Organisations Work With IITC -->
         <section>
-          <h2>Compliance, Sustainability & ESG Training</h2>
-          <ul>
-            <li>Occupational Safety & Health (OSH)</li>
-            <li>Environmental Management & Sustainability Practices</li>
-            <li>ESG Awareness & Governance Training</li>
-            <li>Food Safety Management</li>
-            <li>Annual Certification & Compliance Training</li>
-          </ul>
-
           <h2>Why Organisations Work With IITC</h2>
           <ul>
             <li>HRD Corp Registered Training Provider</li>
@@ -234,7 +223,11 @@
             <li>Practical, implementation-focused training methodology</li>
             <li>Cross-industry experience across corporate, manufacturing, technical, and sustainability sectors</li>
           </ul>
+          <div class="section-divider"></div>
+        </section>
 
+        <!-- Our Facilitator Network -->
+        <section>
           <h2>Our Facilitator Network</h2>
           <ul>
             <li>Human Resource Development</li>
@@ -246,11 +239,11 @@
           </ul>
         </section>
 
+        <!-- Contact -->
         <div class="contact-card">
           <div class="footer-top">
             📞 019-316 3766 | ✉ info@iitc.com.my | 🌐 www.iitc.com.my
           </div>
-
           <div class="footer-links">
             <a class="linkedin-btn" href="https://www.linkedin.com/company/iitraining/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             <a class="whatsapp-btn" href="https://wa.me/60193163766" target="_blank" rel="noopener noreferrer">WhatsApp</a>
